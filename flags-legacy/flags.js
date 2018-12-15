@@ -1,4 +1,4 @@
-import log from './simpleLogger.js'
+import {log, log2 } from './simpleLogger.js'
 
 class FlagIcon extends HTMLElement {
   constructor() {
@@ -23,6 +23,7 @@ class FlagIcon extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, newValue) {
     log("old value: " + oldValue + " | new value: " + newValue);
+    log2("old value: " + oldValue + " | new value: " + newValue);
     this.updateFlag(newValue);
   }
 
