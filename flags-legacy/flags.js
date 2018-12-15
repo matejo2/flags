@@ -22,7 +22,7 @@ class FlagIcon extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) { //lifecyle callback
-    log("old value: " + oldValue + " | new value: " + newValue);
+    log(`old Value ${oldValue} | new Value ${newValue}`);
     this.updateFlag(newValue);
   }
 
