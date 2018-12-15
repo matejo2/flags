@@ -6,6 +6,7 @@ class FlagIcon extends HTMLElement () {
         });
         this._ShadowRoot.innerHTML  = `
             <link href="assets/flags.css" rel=stylesheet type="type/css">
+            <img src="assets/blank.gif" class="flag" />
         `
     }
 }
