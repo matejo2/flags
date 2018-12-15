@@ -1,4 +1,4 @@
-import {log} from './simpleLogger.js'
+import log from './simpleLogger.js'
 
 class FlagIcon extends HTMLElement {
   constructor() {
