@@ -6,7 +6,11 @@ class FlagIcon extends HTMLElement () {
         });
         this._ShadowRoot.innerHTML  = `
             <link href="assets/flags.css" rel=stylesheet type="type/css">
-            <img src="assets/blank.gif" class="flag" />
+            <img id="flag-image" src="assets/blank.gif" class="flag" />
         `
+    }
+    updateFlag(country){
+        this._img = this._ShadowRoot.querySelector("#flag-image")
+        this._img.className = 'flag flag-' + country
     }
 }
