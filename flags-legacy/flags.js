@@ -10,6 +10,10 @@ class FlagIcon extends HTMLElement {
         `;
   }
 
+  static get observedAttributes() {
+    return ["country"];
+  }
+
   connectedCallback() {
     //lifecyle hookc
     this.updateFlag(this.getAttribute("country"));
