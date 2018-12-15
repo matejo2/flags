@@ -8,9 +8,12 @@ function getRandomCountry(max) {
 
 var app = new Vue({
   el: "#app", //element im dom/html an den man sich verbinden will (ist die id)
-  computed: {
-    country: function() {
-      return countries[getRandomCountry(countries.length)];
+  data: {
+      country: 'de'
+  },
+  methods: {
+    changeCountry: function(){
+        this.country = countries[getRandomCountry(countries.length)];
     }
   },
   mounted(){
