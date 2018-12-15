@@ -2,16 +2,13 @@
 <html>
   <head>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script src="flags.js" type="module"></script>
   </head>
 
   <body>
     <div id="app">
         <!--anstatt v-bind geht auch nur : -> ist impizit-->
-        <flag-icon :country="country"></flag-icon> 
+        <vue-flag-icon country="de"></vue-flag-icon> 
         <br>
-        <!--anstatt v-on:click geht auch @click-->
-        <button id="changeCountry" @click="changeCountry">Change country</button>
     </div>
   </body>
   <script src="my.js"></script>
