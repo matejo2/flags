@@ -8,23 +8,17 @@ function getRandomCountry(max) {
 
 var app = new Vue({
   el: "#app", //element im dom/html an den man sich verbinden will (ist die id)
-  //  data: {
-  //    country: "gr"
-  //  },
   computed: {
     country: function() {
       return countries[getRandomCountry(countries.length)];
     }
   },
   mounted(){
-      //this.country = 'us'
-    console.log("mounted" + this.country);
+    console.log("mounted");
   },
   updated: function() {
-      //this.country
     console.log("updated");
   },
-  watch: {}
 });
 
 app.$watch("country", function(newValue, oldValue) {
