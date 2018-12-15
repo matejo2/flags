@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="flags.js" type="module"></script>
   </head>
 
   <body>
-    <flag-icon country="de"></flag-icon>
-    <flag-icon country="jp"></flag-icon>
+    <div id="app">
+        <flag-icon v-bind:country="country"></flag-icon>
+    </div>
   </body>
+  <script src="my.js"></script>
+  <!--
+    Hier unten, weil es sonst am Anfang ausgeführt wird und nicht funktioniert
+    und um Seite schneller zu machen
+  -->
 </html>
