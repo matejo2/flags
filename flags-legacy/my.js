@@ -33,5 +33,10 @@ var app = new Vue({
   el: '#app',
   data: {
     country: 'ro'
+  },
+  methods: {
+    changeCountry: function(){
+      this.country = countries[getRandomCountry(countries.length)]
+    }
   }
 })
