@@ -13,4 +13,11 @@ var app = new Vue({
     }
 })
 
+app.$watch('country', function(newValue, oldValue){
+    console.log("watcher: new: " + newValue + " | old: " + oldValue)
+})
+
+app.$watch('country', (newValue, oldValue) => 
+console.log("one line watcher: new: " + newValue + " | old: " + oldValue))
+
 //mit npm install vue vermutlich einbinden
